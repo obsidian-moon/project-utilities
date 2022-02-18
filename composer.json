@@ -1,0 +1,22 @@
+{
+  "name": "obsidian-moon/project-utilities",
+  "description": "Common tools used in projects",
+  "version": "1.0.0",
+  "keywords": ["library", "utilities"],
+  "homepage": "https://obsidian-moon.org",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alfonso Martinez",
+      "homepage": "https://github.com/opensaurusrex"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0"
+  },
+  "autoload": {
+    "psr-4" : {
+      "ObsidianMoon\\ProjectUtilities\\" : "src/"
+    }
+  }
+}
