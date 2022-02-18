@@ -1,7 +1,7 @@
 {
   "name": "obsidian-moon/project-utilities",
   "description": "Common tools used in projects",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "keywords": ["library", "utilities"],
   "homepage": "https://obsidian-moon.org",
   "license": "MIT",
