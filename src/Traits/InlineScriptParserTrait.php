@@ -7,6 +7,9 @@ namespace ObsidianMoon\ProjectUtilities\Traits;
  *
  * This trait adds the ability to automatically parse data to an inline script, e.g. `wp_add_inline_script()`
  *
+ * We pass it as a string so that it can be handled by `JSON.parse()` method in browser after load, which speeds up the
+ * load time by a decent amount.
+ *
  * Usage:
  *
  * ```php
@@ -15,9 +18,14 @@ namespace ObsidianMoon\ProjectUtilities\Traits;
  *
  * Returns:
  *
- * ```
+ * ```js
  * var nameOfVariable = JSON.parse('{"key": "value", "key2": "value2"}');
  * ```
+ *
+ * @property string $name  The name of the variable that we will be saving to.
+ * @property mixed  $value The values that we want to encode into a JSON string.
+ *
+ * @returns string
  */
 trait InlineScriptParserTrait
 {

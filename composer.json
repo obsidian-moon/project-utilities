@@ -1,18 +1,31 @@
 {
   "name": "obsidian-moon/project-utilities",
-  "description": "Common tools used in projects",
-  "version": "0.1.0",
+  "description": "Common tools used to assist in projects",
+  "version": "0.2.0",
   "keywords": ["library", "utilities"],
-  "homepage": "https://obsidian-moon.org",
+  "homepage": "https://github.com/obsidian-moon/project-utilities",
   "license": "MIT",
   "authors": [
     {
       "name": "Alfonso Martinez",
+      "email": "opensaurusrex@gmail.com",
+      "role": "Lead Developer",
       "homepage": "https://github.com/opensaurusrex"
     }
   ],
+  "support": {
+    "email": "opensaurusrex@gmail.com",
+    "issues": "https://github.com/obsidian-moon/project-utilities/issues",
+    "source": "https://github.com/obsidian-moon/project-utilities"
+  },
   "require": {
-    "php": ">=8.0.0"
+    "php": ">=8.0.0",
+    "sentry/sdk": "^3.3"
+  },
+  "require-dev": {
+    "phpmd/phpmd": "^2.13",
+    "roave/security-advisories": "dev-latest",
+    "squizlabs/php_codesniffer": "^3.7"
   },
   "autoload": {
     "psr-4" : {
