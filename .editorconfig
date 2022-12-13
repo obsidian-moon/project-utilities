@@ -21,6 +21,6 @@ tab_width = 2
 indent_size = 2
 tab_width = 2
 
-[{composer.lock,.stylelintrc,.babelrc,jest.config,.eslintrc,*.bowerrc,*.jsb3,*.jsb2,*.json}]
+[{composer.lock,*.json}]
 indent_size = 2
 tab_width = 2
