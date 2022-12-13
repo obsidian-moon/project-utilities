@@ -9,6 +9,22 @@ use Sentry;
  *
  * Make sure that Sentry is being loaded into WordPress during initialization.
  *
+ * Usage:
+ *
+ * ```php
+ * use ObsidianMoon\ProjectUtilities\WordPress\AddSentryToPlugin;
+ *
+ * if (get_config('sentry_php_enabled')) {
+ *     $sentryPhp = new AddSentryToPlugin([
+ *         'dsn' => get_config('sentry_php_dsn'),
+ *         'release' => PLUGIN_VERSION
+ *     ]);
+ *
+ *     add_action('init', [$sentryPhp, 'addSentry'];
+ * }
+ * ```
+ *
+ * @property array $options The options passed to Sentry.
  */
 class AddSentryToPlugin
 {
@@ -17,10 +33,14 @@ class AddSentryToPlugin
      */
     public function __construct(protected array $options = [])
     {
-        add_action('wp_init', [$this, 'addScript']);
     }
 
-    public function addScript(): void
+    /**
+     * The callback
+     *
+     * @return void
+     */
+    public function addSentry(): void
     {
         Sentry\init($this->options);
     }

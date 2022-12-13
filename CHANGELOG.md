@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.2.1
+
+* Double init calls were causing system to not see add script functions. Removed the `init` action hook and made the
+  functions into callbacks called `addSentry`.
+
 ### Version 0.2.0
 
 * Added `ObsidianMoon\ProjectUtilities\WordPress\AddSentryScriptToHead` to handle adding `Sentry.io` to header on
