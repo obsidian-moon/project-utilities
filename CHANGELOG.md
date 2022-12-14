@@ -1,6 +1,10 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.3.0
+
+* Added `ObsidianMoon\ProjectUtilities\Traits\ParseUrlHelperTrait` to add some methods for handling URLs.
+
 ### Version 0.2.1
 
 * Double init calls were causing system to not see add script functions. Removed the `init` action hook and made the
