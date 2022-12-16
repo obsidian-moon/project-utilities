@@ -51,18 +51,32 @@ Usage:
 ```php
 use ObsidianMoon\ProjectUtilities\WordPress\AddSentryScriptToHead;
 
-if (get_option('sentry_js_enabled')) {
-    $sentryJs = new AddSentryScriptToHead(
-         [
-             'dsn' => get_option('sentry_js_dsn'),
-             'release' => PLUGIN_VERSION
-         ],
-         get_option('sentry_js_version', '7.25.0')
-     );
-
-     add_action('init', [$sentryJs, 'addSentry'];
+function addSentryCallback()
+{
+   if (get_option('sentry_js_enabled')) {
+       new AddSentryScriptToHead([
+           'script-name' => 'obsidian-moon-sentry', // Default value, optional.
+           'init' => [
+               'dsn' => get_option('sentry_js_dsn'),
+               'release' => PLUGIN_VERSION
+            ],
+            'version' => '7.25.0' // Default value, optional.
+       ]);
+   }
 }
+
+add_action('init', 'addSentryCallback');
 ```
+
+You can also use a shorthand for `init` when creating the `AddSentryToHead` object:
+
+```php
+new AddSentryScriptToHead([
+    'dsn' => get_option('sentry_js_dsn'),
+    'release' => PLUGIN_VERSION
+]);
+```
+
 </details>
 
 #### `AddSentryToPlugin`
@@ -73,14 +87,17 @@ if (get_option('sentry_js_enabled')) {
 ```php
 use ObsidianMoon\ProjectUtilities\WordPress\AddSentryToPlugin;
 
-if (get_config('sentry_php_enabled')) {
-    $sentryPhp = new AddSentryToPlugin([
-        'dsn' => get_config('sentry_php_dsn'),
-        'release' => PLUGIN_VERSION
-    ]);
-
-    add_action('init', [$sentryPhp, 'addSentry'];
+function addSentryCallback()
+{
+    if (get_config('sentry_php_enabled')) {
+        new AddSentryToPlugin([
+            'dsn' => get_config('sentry_php_dsn'),
+            'release' => PLUGIN_VERSION
+        ]);
+    }
 }
+
+add_action('init', 'addSentryCallback');
 ```
 </details>
 
