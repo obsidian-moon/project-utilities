@@ -14,34 +14,33 @@ use Sentry;
  * ```php
  * use ObsidianMoon\ProjectUtilities\WordPress\AddSentryToPlugin;
  *
- * if (get_config('sentry_php_enabled')) {
- *     $sentryPhp = new AddSentryToPlugin([
- *         'dsn' => get_config('sentry_php_dsn'),
- *         'release' => PLUGIN_VERSION
- *     ]);
- *
- *     add_action('init', [$sentryPhp, 'addSentry'];
+ * function addSentryCallback()
+ * {
+ *     if (get_config('sentry_php_enabled')) {
+ *         new AddSentryToPlugin([
+ *             'dsn' => get_config('sentry_php_dsn'),
+ *             'release' => PLUGIN_VERSION
+ *         ]);
+ *     }
  * }
+ *
+ * add_action('init', 'addSentry');
  * ```
  *
- * @property array $options The options passed to Sentry.
+ * @property array $defaults The default options passed to Sentry.
  */
 class AddSentryToPlugin
 {
+    protected array $defaults = [
+        'dsn' => ''
+    ];
+
     /**
      * @param array $options The Sentry options needed to run.
      */
-    public function __construct(protected array $options = [])
+    public function __construct(array $options = [])
     {
-    }
-
-    /**
-     * The callback
-     *
-     * @return void
-     */
-    public function addSentry(): void
-    {
-        Sentry\init($this->options);
+        $options = array_merge($this->defaults, $options);
+        Sentry\init($options);
     }
 }

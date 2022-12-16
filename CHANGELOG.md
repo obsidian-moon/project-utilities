@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.3.1
+
+* Removing `addSentry` method from WordPress Sentry classes, must call them from init callback.
+* Added a shorthand for `init` into `AddSentryToHead`, if you don't want to use another version or script name.
+
 ### Version 0.3.0
 
 * Added `ObsidianMoon\ProjectUtilities\Traits\ParseUrlHelperTrait` to add some methods for handling URLs.
