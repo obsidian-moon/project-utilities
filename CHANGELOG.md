@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.3.3
+
+* Fixing an issue with the autoloading, due to the conflicts that were merged in last patch.
+* Actually updating the dependencies since that didn't get included for some reason.
+
 ### Version 0.3.2
 
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\Post\CustomMetaDataInterface`
