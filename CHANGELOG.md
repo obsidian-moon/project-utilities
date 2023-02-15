@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.4.0
+
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\Blocks\WordPressBlockTypeInterface`
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\Blocks\WordPressBlockTypeCallbackInterface`
+
 ### Version 0.3.3
 
 * Fixing an issue with the autoloading, due to the conflicts that were merged in last patch.
