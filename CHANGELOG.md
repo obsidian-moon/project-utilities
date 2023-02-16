@@ -5,6 +5,7 @@ Changelog for Project Utilities
 
 #### Features
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\CustomTypeRegisterInterface`.
 * Added additional documentation for various sections of the code.
 
 #### Breaking Changes
