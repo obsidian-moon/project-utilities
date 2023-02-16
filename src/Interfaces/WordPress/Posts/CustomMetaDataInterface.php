@@ -35,5 +35,5 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts;
  */
 interface CustomMetaDataInterface
 {
-    public function addMetaData(): void;
+    public static function addMetaData(): void;
 }

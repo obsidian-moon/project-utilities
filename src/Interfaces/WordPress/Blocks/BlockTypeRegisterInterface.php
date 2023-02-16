@@ -9,5 +9,5 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks;
  */
 interface BlockTypeRegisterInterface
 {
-    public function registerBlockType(): void;
+    public static function registerBlockType(): void;
 }
