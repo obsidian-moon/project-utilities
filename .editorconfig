@@ -13,7 +13,7 @@ trim_trailing_whitespace = true
 [*.scss]
 indent_size = 2
 
-[{*.cjs,*.js}]
+[{*.cjs,*.js,*.jsx}]
 indent_size = 2
 tab_width = 2
 

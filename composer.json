@@ -1,20 +1,20 @@
 {
   "name": "obsidian-moon/project-utilities",
   "description": "Common tools used in Obsidian Moon projects",
-  "version": "0.4.0",
-  "keywords": ["library", "utilities"],
+  "version": "0.5.0",
+  "keywords": ["library", "utilities", "traits", "interfaces"],
   "homepage": "https://github.com/obsidian-moon/project-utilities",
   "license": "MIT",
   "authors": [
     {
       "name": "Alfonso Martinez",
-      "email": "opensaurusrex@gmail.com",
+      "email": "alfonso@obsidian-moon.org",
       "role": "Lead Developer",
       "homepage": "https://github.com/opensaurusrex"
     }
   ],
   "support": {
-    "email": "opensaurusrex@gmail.com",
+    "email": "alfonso@obsidian-moon.org",
     "issues": "https://github.com/obsidian-moon/project-utilities/issues",
     "source": "https://github.com/obsidian-moon/project-utilities"
   },
