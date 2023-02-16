@@ -21,7 +21,7 @@ trait AddJFIFMimeTypeTrait
      *
      * @return array
      */
-    public static function addJFIFMimeTypes(array $mimes): array
+    public function addJFIFMimeTypes(array $mimes): array
     {
         $mimes['jfif'] = 'image/jpeg';
 

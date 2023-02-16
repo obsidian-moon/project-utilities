@@ -7,5 +7,5 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts;
  */
 interface CustomTypeRegisterInterface
 {
-    public static function registerCustomType(): void;
+    public function registerCustomType(): void;
 }

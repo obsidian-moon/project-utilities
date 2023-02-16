@@ -9,5 +9,5 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks;
  */
 interface BlockTypeCallbackInterface
 {
-    public static function showBlock(mixed $attributes = [], mixed $content = null);
+    public function showBlock(mixed $attributes = [], mixed $content = null);
 }
