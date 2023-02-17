@@ -24,11 +24,13 @@ trait LocationHelperTrait
     /**
      * Return the root plugin directory
      *
+     * @param string $pluginRoot The root location of the plugin.
+     *
      * @return string
      */
-    public function pluginUrl(): string
+    public function pluginUrl(string $pluginRoot): string
     {
-        $url = plugins_url('/', OBSIDIAN_PLUGIN_ROOT);
+        $url = plugins_url('/', $pluginRoot);
 
         return rtrim($url, '/');
     }
@@ -36,13 +38,14 @@ trait LocationHelperTrait
     /**
      * Return the location of a view file specified
      *
-     * @param string $viewLocation The location of the view within the plugin
+     * @param string $viewLocation The location of the view within the plugin.
+     * @param string $pluginRoot   The root file location of plugin.
      *
      * @return string
      */
-    public function view(string $viewLocation): string
+    public function view(string $viewLocation, string $pluginRoot): string
     {
-        return OBSIDIAN_PLUGIN_ROOT . '/app/Views/' . $viewLocation . '.php';
+        return $pluginRoot . '/app/Views/' . $viewLocation . '.php';
     }
 
     /**
@@ -61,13 +64,14 @@ trait LocationHelperTrait
      *
      * `/path/to/wordpress/wp-content/plugins/demo-site-plugin/assets/css/releases.css`
      *
-     * @param string $filename Asset filename (with or without sub-folder)
+     * @param string $filename   Asset filename (with or without sub-folder).
+     * @param string $pluginRoot Root file location of plugin.
      *
      * @return string
      */
-    public function asset(string $filename): string
+    public function asset(string $filename, string $pluginRoot): string
     {
-        return OBSIDIAN_PLUGIN_ROOT . '/assets/' . $filename;
+        return $pluginRoot . '/assets/' . $filename;
     }
 
     /**
@@ -84,13 +88,14 @@ trait LocationHelperTrait
      *
      * `https://www.demosite.org/wp-content/plugins/demo-site-plugin/assets/css/releases.css`
      *
-     * @param string $filename Filename being returned
+     * @param string $filename  Filename being returned
+     * @param string $pluginUri URI of the plugin/theme
      *
      * @return string
      */
-    public function webAsset(string $filename): string
+    public function webAsset(string $filename, string $pluginUri): string
     {
-        return OBSIDIAN_PLUGIN_URI . '/assets/' . $filename;
+        return $pluginUri . '/assets/' . $filename;
     }
 
     /**
@@ -108,11 +113,12 @@ trait LocationHelperTrait
      * `https://www.demosite.org/wp-content/uploads/ReleaseOverview.pdf`
      *
      * @param string $filename Filename being returned
+     * @param string $uri      URI of uploads
      *
      * @return string
      */
-    public function webUpload(string $filename): string
+    public function webUpload(string $filename, string $uri): string
     {
-        return OBSIDIAN_UPLOAD_URI . $filename;
+        return $uri . $filename;
     }
 }
