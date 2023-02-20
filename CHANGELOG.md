@@ -4,6 +4,8 @@ Changelog for Project Utilities
 ### Version 0.5.0
 
 #### Features
+* Added `ObsidianMoon\ProjectUtilities\Abstracts\WordPress\AbstractQueryTable`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Database\RunDatabaseQueryInterface`
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\GetMetaDataInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterCustomTypeInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Roles\ModifyUserRoleInterface`.
