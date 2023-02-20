@@ -1,6 +1,6 @@
 <?php
 
-namespace ObsidianMoon\ProjectUtilities\Traits\WordPress\Helpers;
+namespace ObsidianMoon\ProjectUtilities\Traits\Helpers;
 
 trait GetGoogleFontsUrlTrait
 {

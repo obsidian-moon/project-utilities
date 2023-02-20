@@ -11,7 +11,7 @@ Changelog for Project Utilities
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterCustomTypeInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Roles\ModifyUserRoleInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Settings\SettingsRepositoryInterface`.
-* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\Helpers\GetGoogleFontsUrlTrait`.
+* Added `ObsidianMoon\ProjectUtilities\Traits\Helpers\GetGoogleFontsUrlTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\Helpers\GetThumbnailUriTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\CheckVersionsTrait`.
