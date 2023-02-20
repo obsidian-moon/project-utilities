@@ -4,13 +4,14 @@ Changelog for Project Utilities
 ### Version 0.5.0
 
 #### Features
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\GetMetaDataInterface`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterCustomTypeInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
-* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\CustomTypeRegisterInterface`.
 * Added additional documentation for various sections of the code.
 
 #### Breaking Changes
 * Moved `ObsidianMoon\ProjectUtilities\Interfaces\Post\CustomMetaDataInterface` to
-  `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\CustomMetaDataInterface`.
+  `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterMetaDataInterface`.
 * Changed `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\BlockTypeRegisterInterface::handle(): void` to
   `registerBlockType(): void` to be more consistent with naming.
 

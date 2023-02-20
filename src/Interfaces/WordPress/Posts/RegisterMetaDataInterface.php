@@ -33,7 +33,7 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts;
  * ````
  * Adds a method which can be used to wrap groups of `register_meta()` calls.
  */
-interface CustomMetaDataInterface
+interface RegisterMetaDataInterface
 {
     public function addMetaData(): void;
 }

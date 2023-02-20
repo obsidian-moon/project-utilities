@@ -3,7 +3,7 @@
 
 Interfaces to ensure a consistent methodology when coding for anything pertaining to WordPress posts.
 
-`CustomMetaDataInterface`
+`RegisterMetaDataInterface`
 -------------------------
 
 Register Custom Meta
@@ -11,9 +11,9 @@ Register Custom Meta
 #### Usage:
 
 ````php
-use ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Post\CustomMetaDataInterface
+use ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Post\RegisterMetaDataInterface
 
-class MemberDetails implements CustomMetaDataInterface
+class MemberDetails implements RegisterMetaDataInterface
 {
     /**
      * Meta Factory
