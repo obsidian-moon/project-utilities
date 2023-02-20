@@ -22,9 +22,9 @@ Usage:
 
 ````php
 use ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\BlockTypeCallbackInterface
-use ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\BlockTypeRegisterInterface
+use ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\RegisterBlockTypeInterface
 
-class MemberDetailsBlock implements BlockTypeCallbackInterface, BlockTypeRegisterInterface
+class MemberDetailsBlock implements BlockTypeCallbackInterface, RegisterBlockTypeInterface
 {
     /**
      * Wrapped Registration of Meta

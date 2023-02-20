@@ -7,7 +7,7 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks;
  *
  * Ensure we use a consistent method for wrapping `register_block_type`.
  */
-interface BlockTypeRegisterInterface
+interface RegisterBlockTypeInterface
 {
     public function registerBlockType(): void;
 }

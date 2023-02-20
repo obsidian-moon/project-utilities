@@ -16,6 +16,8 @@ Changelog for Project Utilities
 #### Breaking Changes
 * Moved `ObsidianMoon\ProjectUtilities\Interfaces\Post\CustomMetaDataInterface` to
   `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterMetaDataInterface`.
+* Renamed `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\BlockTypeRegisterInterface` to
+  `RegisterBlockTypeInterface`.
 * Changed `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Blocks\BlockTypeRegisterInterface::handle(): void` to
   `registerBlockType(): void` to be more consistent with naming.
 
