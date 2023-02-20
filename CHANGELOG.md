@@ -6,6 +6,7 @@ Changelog for Project Utilities
 #### Features
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\GetMetaDataInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts\RegisterCustomTypeInterface`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Roles\ModifyUserRoleInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
 * Added additional documentation for various sections of the code.
 
