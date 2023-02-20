@@ -56,7 +56,7 @@ trait CheckVersionsTrait
         );
     }
 
-    public function checkThemeVersion(
+    public function checkThemeVersions(
         string $php = '8.0.0',
         string $wp = '6.0',
         string $themeName = 'Obsidian Theme',

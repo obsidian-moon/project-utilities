@@ -11,6 +11,8 @@ Changelog for Project Utilities
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Roles\ModifyUserRoleInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Settings\SettingsRepositoryInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
+* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\CheckVersionsTrait`.
+* Added `ObsidianMoon\ProjectUtilities\WordPress\ThemeCompatibilityError`.
 * Added additional documentation for various sections of the code.
 
 #### Breaking Changes
