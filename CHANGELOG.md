@@ -1,11 +1,6 @@
 Changelog for Project Utilities
 ===============================
 
-### Version 0.5.1
-
-#### Features
-* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddSVGMimeTypeTrait`.
-
 ### Version 0.5.0
 
 #### Features
@@ -19,6 +14,7 @@ Changelog for Project Utilities
 * Added `ObsidianMoon\ProjectUtilities\Traits\Helpers\GetGoogleFontsUrlTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\Helpers\GetThumbnailUriTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddJFIFMimeTypeTrait`.
+* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddSVGMimeTypeTrait`.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\CheckVersionsTrait`.
 * Added `ObsidianMoon\ProjectUtilities\WordPress\ThemeCompatibilityError`.
 * Added additional documentation for various sections of the code.
