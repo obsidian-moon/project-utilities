@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.5.1
+
+#### Features
+* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\AddSVGMimeTypeTrait`.
+
 ### Version 0.5.0
 
 #### Features
