@@ -2,8 +2,6 @@
 
 namespace ObsidianMoon\ProjectUtilities\WordPress;
 
-use JetBrains\PhpStorm\ArrayShape;
-
 /**
  * Adds a Sentry.io script to head for WordPress
  *
