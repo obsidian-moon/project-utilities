@@ -1,6 +1,12 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.5.1
+
+#### Bug Fixes
+* Corrected an issue where I installed composer libraries using system php 8.1 which made the platform requirement too
+  high for what I was trying to support. This has been corrected.
+
 ### Version 0.5.0
 
 #### Features
