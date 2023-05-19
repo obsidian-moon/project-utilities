@@ -1,7 +1,7 @@
 {
   "name": "obsidian-moon/project-utilities",
   "description": "Common tools used in Obsidian Moon projects",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "keywords": ["library", "utilities", "traits", "interfaces"],
   "homepage": "https://github.com/obsidian-moon/project-utilities",
   "license": "MIT",
@@ -30,6 +30,11 @@
   "autoload": {
     "psr-4" : {
       "ObsidianMoon\\ProjectUtilities\\" : "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
     }
   }
 }

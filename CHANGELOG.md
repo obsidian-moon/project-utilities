@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.5.2
+
+#### Features
+* Added `string $prefix = 'var'` property to `ObsidianMoon\ProjectUtilities\Traits\InlineScriptParserTrait`.
+
 ### Version 0.5.1
 
 #### Bug Fixes
