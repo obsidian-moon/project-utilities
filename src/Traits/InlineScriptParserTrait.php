@@ -22,16 +22,17 @@ namespace ObsidianMoon\ProjectUtilities\Traits;
  * var nameOfVariable = JSON.parse('{"key": "value", "key2": "value2"}');
  * ```
  *
- * @property string $name  The name of the variable that we will be saving to.
- * @property mixed  $value The values that we want to encode into a JSON string.
+ * @property string $name   The name of the variable that we will be saving to.
+ * @property mixed  $value  The values that we want to encode into a JSON string.
+ * @property string $prefix The prefix that we plan on using before the variable.
  *
  * @returns string
  */
 trait InlineScriptParserTrait
 {
-    protected static function getInlineScriptData(string $name, mixed $value): string
+    protected static function getInlineScriptData(string $name, mixed $value, string $prefix = 'var'): string
     {
-        return "var $name = JSON.parse('" . addslashes(html_entity_decode(
+        return "$prefix $name = JSON.parse('" . addslashes(html_entity_decode(
             json_encode($value),
             ENT_QUOTES,
             'UTF-8'
