@@ -1,6 +1,13 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.6.0
+
+#### Features
+* Adding additional documentation via `README.md` files so that users can view them via GitHub sources.
+* Updated the composer dependencies.
+* Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\Settings\SettingsRepositoryTrait`.
+
 ### Version 0.5.2
 
 #### Features
