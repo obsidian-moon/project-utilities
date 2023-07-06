@@ -19,7 +19,7 @@
     "source": "https://github.com/obsidian-moon/project-utilities"
   },
   "require": {
-    "php": ">=8.0.0",
+    "php": ">=8.2",
     "sentry/sdk": "^3.3"
   },
   "require-dev": {
