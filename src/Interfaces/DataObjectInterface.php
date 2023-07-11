@@ -30,5 +30,8 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces;
 interface DataObjectInterface
 {
     public function getAll(): array|null|object;
+
+    public function getByID(int $id): array|null|object;
+
     public function getDataObject(): object;
 }
