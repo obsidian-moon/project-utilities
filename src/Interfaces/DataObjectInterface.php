@@ -17,11 +17,10 @@
 
 namespace ObsidianMoon\ProjectUtilities\Interfaces;
 
-
 /**
  * Interface DataObjectInterface
  *
- * Enter an interface description here...
+ * An interface to provide structure for data objects.
  *
  * @package ObsidianMoon\ProjectUtilities\Interfaces
  *
@@ -30,5 +29,6 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces;
  */
 interface DataObjectInterface
 {
+    public function getAll(): array|null|object;
     public function getDataObject(): object;
 }
