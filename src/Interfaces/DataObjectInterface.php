@@ -31,7 +31,7 @@ interface DataObjectInterface
 {
     public function getAll(): array|null|object;
 
-    public function getByID(int|string $id): DataObjectInterface;
+    public function getByID(int|string $id): DataObjectInterface|false;
 
     public function getDataObject(): object;
 }
