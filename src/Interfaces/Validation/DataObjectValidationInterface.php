@@ -23,7 +23,7 @@ namespace ObsidianMoon\ProjectUtilities\Interfaces\Validation;
  */
 interface DataObjectValidationInterface
 {
-    public function hasValue(string $value);
+    public function valueIsNotEmpty(string $value);
 
     public function valueExists(string $value);
 }
