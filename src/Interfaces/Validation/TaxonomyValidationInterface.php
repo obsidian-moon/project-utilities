@@ -15,7 +15,7 @@
  * @category  Library
  */
 
-namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Taxonomy;
+namespace ObsidianMoon\ProjectUtilities\Interfaces\Validation;
 
 /**
  * Interface TaxonomyValidationInterface
@@ -33,14 +33,14 @@ interface TaxonomyValidationInterface
     /**
      * Checking if there is a term value being sent
      *
-     * @param string $term_id The ID of the taxonomy term
+     * @param string $termID The ID of the taxonomy term
      */
-    public function hasValue(string $term_id);
+    public function termIsNotEmpty(string $termID);
 
     /**
      * Checking if the taxonomy term already exists
      *
-     * @param string $term_id The ID of the Release term
+     * @param string $termID The ID of the Release term
      */
-    public function termIsTaken(string $term_id);
+    public function termExists(string $termID);
 }

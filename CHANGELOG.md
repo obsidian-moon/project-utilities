@@ -7,8 +7,9 @@ Changelog for Project Utilities
 * Adding additional documentation via `README.md` files so that users can view them via GitHub sources.
 * Updated the composer dependencies.
 * Added `ObsidianMoon\ProjectUtilities\Traits\WordPress\Settings\SettingsRepositoryTrait`.
-* Added `ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Taxonomy\TaxonomyValidationInterface`.
 * Added `ObsidianMoon\ProjectUtilities\Interfaces\DataObjectInterface`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\Validation\DataObjectValidationInterface`.
+* Added `ObsidianMoon\ProjectUtilities\Interfaces\Validation\TaxonomyValidationInterface`.
 
 ### Version 0.5.2
 
