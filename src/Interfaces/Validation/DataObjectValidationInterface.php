@@ -27,5 +27,5 @@ interface DataObjectValidationInterface
 {
     public function valueIsNotEmpty(string $value);
 
-    public function valueExists(string $value, DataObjectInterface $dataObject);
+    public function valueExists(mixed $value, DataObjectInterface $dataObject);
 }
