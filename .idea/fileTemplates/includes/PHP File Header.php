@@ -1,4 +1,3 @@
-<?php
 
 /**
  * Project Utilities by Obsidian Moon Development
@@ -7,17 +6,11 @@
  *
  * PHP version 8
  *
+ * @category  Library
  * @package   ObsidianMoon\ProjectUtilities
  * @author    Alfonso Martinez <opensaurusrex@gmail.com>
- * @link      https://library.jaggaer.com
  * @copyright 2018-2023 Alfonso Martinez
  * @license   MIT
- * @category  Library
+ * @link      https://library.jaggaer.com
  */
-
-namespace ObsidianMoon\ProjectUtilities\Interfaces\WordPress\Posts;
-
-interface GetMetaDataInterface
-{
-    public function getMetaData(): array;
-}
+ 

@@ -1,9 +1,34 @@
 <?php
 
+/**
+ * Project Utilities by Obsidian Moon Development
+ *
+ * A collection of useful code that you can use across several projects.
+ *
+ * PHP version 8
+ *
+ * @package   ObsidianMoon\ProjectUtilities
+ * @author    Alfonso Martinez <opensaurusrex@gmail.com>
+ * @link      https://library.jaggaer.com
+ * @copyright 2018-2023 Alfonso Martinez
+ * @license   MIT
+ * @category  Library
+ */
+
 namespace ObsidianMoon\ProjectUtilities\WordPress;
 
 use JetBrains\PhpStorm\NoReturn;
 
+/**
+ * Class ThemeCompatibilityError
+ *
+ * For making sure that the theme or plug is compatible with the version of PHP & WP that is installed.
+ *
+ * @package ObsidianMoon\ProjectUtilities\WordPress
+ *
+ * @author  Alfonso Martinez <opensaurusrex@gmail.com>
+ * @since   2023-07-03
+ */
 class ThemeCompatibilityError
 {
     protected string $currentVersion = '';
