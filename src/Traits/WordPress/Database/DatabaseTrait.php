@@ -39,9 +39,14 @@ trait DatabaseTrait
     protected string $sql;
 
     /**
-     * @var string The prefix for WordPress table names
+     * @var string The prefix for WordPress table names & core table names
      */
     protected string $wpDatabasePrefix;
+    protected string $wpOptions;
+    protected string $wpPosts;
+    protected string $wpPostmeta;
+    protected string $wpUsers;
+    protected string $wpUsermeta;
 
     /**
      * gatherPrefixes
@@ -62,5 +67,10 @@ trait DatabaseTrait
         $this->charsetCollate   = $wpdb->get_charset_collate();
         $this->wpDatabasePrefix = $wpdb->prefix;
         $this->databasePrefix   = $wpdb->prefix . $prefix;
+        $this->wpOptions        = $wpdb->prefix . 'options';
+        $this->wpPosts          = $wpdb->prefix . 'posts';
+        $this->wpPostmeta       = $wpdb->prefix . 'postmeta';
+        $this->wpUsers          = $wpdb->prefix . 'users';
+        $this->wpUsermeta       = $wpdb->prefix . 'usermeta';
     }
 }
