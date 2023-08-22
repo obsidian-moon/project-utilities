@@ -1,6 +1,12 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.6.1
+
+#### Features
+* Adding `wpPosts`, `wpPostmeta`, `wpUsers`, `wpUsermeta`, and `wpOptions` to
+  `ObsidianMoon\ProjectUtilities\Traits\WordPress\Database\DatabaseTrait`.
+
 ### Version 0.6.0
 
 #### Features
