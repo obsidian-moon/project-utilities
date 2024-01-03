@@ -27,7 +27,7 @@ namespace ObsidianMoon\ProjectUtilities\Traits\Helpers;
  */
 trait StringHelperTrait
 {
-    public function toCamelcase(string $string, string $separator = '_'): string
+    public function toCamelCase(string $string, string $separator = '_'): string
     {
         return lcfirst(str_replace($separator, '', ucwords($string, $separator)));
     }
