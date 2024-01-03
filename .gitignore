@@ -11,11 +11,8 @@ ehthumbs_vista.db
 error_log
 tmp
 
-# Sensitive JetBrains Files
-.idea/dataSources.xml
-atlassian-ide-plugin.xml
-
 # Project files
+.idea
 vendor
 node_modules
 composer.phar

@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.7.0
+
+#### Features
+* Added `ObsidianMoon\ProjectUtilities\Traits\Helpers\StringHelperTrait`.
+
 ### Version 0.6.1
 
 #### Features
