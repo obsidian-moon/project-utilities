@@ -13,7 +13,7 @@ tmp
 
 # Project files
 .idea
-vendor
 node_modules
+vendor
 composer.phar
 *.cache
