@@ -1,6 +1,11 @@
 Changelog for Project Utilities
 ===============================
 
+### Version 0.7.1
+* Updating libraries to use `sentry/sentry` instead of `sentry/sdk` as recommended.
+* Bumping up the minimum browser support to `7.92.0`.
+* Added the ability to use the `js.sentry-cdn.com` instead of `browser.sentry-cdn.com`.
+
 ### Version 0.7.0
 
 #### Features

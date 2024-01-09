@@ -1,7 +1,7 @@
 {
   "name": "obsidian-moon/project-utilities",
   "description": "Common tools used in Obsidian Moon projects",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "keywords": ["library", "utilities", "traits", "interfaces"],
   "homepage": "https://github.com/obsidian-moon/project-utilities",
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "require": {
     "php": ">=8.2",
-    "sentry/sdk": "^3.3"
+    "sentry/sentry": "^4.3"
   },
   "require-dev": {
     "phpmd/phpmd": "^2.13",
